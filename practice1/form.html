@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Batch 1</title>
+</head>
+<body>
+    <h1>Form Request</h1>
+    <form action="/test.html" method="get">
+        <div>
+            <label for="name">Username</label>
+            <input type="text" placeholder="Username" id="name" name="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" id="email" name="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" name="password">
+        </div>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="number" placeholder="Phone Number" id="phone" name="phone">
+        </div>
+        <div>
+            <label for="color">Pick Your Color</label>
+            <input type="color" id="color" name="color">
+        </div>
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <hr>
+    <h1>Button Practice</h1>
+    <form action="/order">
+        <div>
+            <label for="operator">Operator:</label>
+            <input type="radio" name="operator" id="" value="kevin"><label for="operator">Kevin</label>
+            <input type="radio" name="operator" id="" value="saipul"><label for="operator">Saipul</label>
+        </div> 
+        <div>
+            <label for="problem">Problem</label>
+            <select name="problem" id="problem">
+                <option value="">--</option>
+                <option value="pc-blank">PC Blank</option>
+                <option value="burn">Burn</option>
+            </select>
+        </div>
+        <div>
+            <label for="term">True?</label>
+            <input type="checkbox" name="term" id="term">
+        </div>
+        <div>
+            <p>
+                <label for="notes">Note:</label>
+            </p>
+            <textarea name="notes" id="notes" cols="50" rows="10"></textarea>
+        </div>
+        <button type="submit">Pilih</button>
+
+        <hr>
+        <h1>Validation</h1>
+        <form action="valid">
+                <input type="text" name="input" required minlength="3" maxlength="8">
+                <button type="submit">Send</button>
+
+        </form>
+
+    </form>
+</body>
+</html>
