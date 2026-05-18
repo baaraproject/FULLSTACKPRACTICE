@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test CSS Selector</title>
+    <style>
+        /* Descendant Selector */
+        /* .test p {
+            font-size: 130%;
+            color: darkorange;
+        } */
+
+        /* Direct Descendant Selector */
+        .test > p {
+            font-size: 130%;
+            color: darkorange;
+        }        
+
+        /* Ajdascent Selector. ini Semua bisa pakai nama class, element atau id jugabisa */
+        a + button {
+            background-color: indianred;
+        }
+
+        /* Atribut selector lebih spesifik lagi */
+        input[type="text"] {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Test CSS Selector</h1>
+    <input type="text" name="search" id="">
+    <button>Search</button>
+    <hr>
+    <section class="test">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam voluptates vitae, sed amet laudantium, blanditiis facere eveniet ipsa consequatur eligendi commodi harum molestiae. Consectetur voluptas ullam optio rem iure.</h2>
+        <p>Create by: <span>Alex</span></p>
+        <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi repellat illum laborum quaerat ducimus dolores molestiae nobis dignissimos libero! Necessitatibus obcaecati quaerat officia? Tempore tempora animi debitis dolore quibusdam non.</p>
+        </div>
+        <Button>Like</Button>
+    </section>
+    <hr>
+    <section class="test">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam voluptates vitae, sed amet laudantium, blanditiis facere eveniet ipsa consequatur eligendi commodi harum molestiae. Consectetur voluptas ullam optio rem iure.</h2>
+        <p>Create by: <span>Alex</span></p>
+        <Button>Like</Button>
+    </section>
+    <hr>
+    <section>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam voluptates vitae, sed amet laudantium, blanditiis facere eveniet ipsa consequatur eligendi commodi harum molestiae. Consectetur voluptas ullam optio rem iure.</h2>
+        <p>Create by: <span>Alex</span></p>
+        <Button>Like</Button>
+    </section>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore eos repudiandae ab suscipit, quos accusamus incidunt fuga similique pariatur magni corporis voluptatum! Totam, vel? Facere libero consequatur facilis saepe.</p>
+    <hr>
+    <a href="#">Link</a>
+    <button>Send</button>
+
+</body>
+</html>

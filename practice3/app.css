@@ -1,0 +1,20 @@
+* {
+    background-color: gainsboro;
+}
+
+h1, h2 {
+    color: brown;
+    background-color: burlywood;
+}
+
+span {
+    color: blueviolet;
+}
+
+#list2 {
+    color: chocolate;
+}
+
+.mark {
+    background-color: forestgreen;
+}
