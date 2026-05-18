@@ -1,4 +1,36 @@
-h1 {
+/* h1 {
     color: brown;
     font-size: medium;
+    background-color: aquamarine;
+}
+
+button {
+    color: aqua;
+    background-color: black;
+}
+
+p {
+    color: rgb(255, 94, 0);
+    background-color: black;
+} */
+
+h1 {
+    text-align: center;
+    font-weight: lighter;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+h2 {
+    text-align: start;
+    text-decoration: underline crimson;
+    font-size: 500%;
+}
+
+h3 {
+    text-align: end;
 }
