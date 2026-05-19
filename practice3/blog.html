@@ -15,7 +15,20 @@
         .test > p {
             font-size: 130%;
             color: darkorange;
-        }        
+        }     
+        
+        .test > p:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        section button:hover {
+            background-color: crimson;
+        }
+
+        section:nth-of-type(2n) {
+            background-color: darkslategray;
+        }
 
         /* Ajdascent Selector. ini Semua bisa pakai nama class, element atau id jugabisa */
         a + button {
@@ -27,12 +40,45 @@
             color: red;
         }
 
+       section h2::first-letter {
+            font-size: 200%;
+       }
+
+       section h2::after {
+            content: '*';
+       }
+
+       section p::first-line {
+            color: red;
+       }
+
     </style>
 </head>
 <body>
     <h1>Test CSS Selector</h1>
     <input type="text" name="search" id="">
     <button>Search</button>
+    <hr>
+    <section class="test">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam voluptates vitae, sed amet laudantium, blanditiis facere eveniet ipsa consequatur eligendi commodi harum molestiae. Consectetur voluptas ullam optio rem iure.</h2>
+        <p>Create by: <span>Alex</span></p>
+        <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi repellat illum laborum quaerat ducimus dolores molestiae nobis dignissimos libero! Necessitatibus obcaecati quaerat officia? Tempore tempora animi debitis dolore quibusdam non.</p>
+        </div>
+        <Button>Like</Button>
+    </section>
+    <hr>
+    <section class="test">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam voluptates vitae, sed amet laudantium, blanditiis facere eveniet ipsa consequatur eligendi commodi harum molestiae. Consectetur voluptas ullam optio rem iure.</h2>
+        <p>Create by: <span>Alex</span></p>
+        <Button>Like</Button>
+    </section>
+    <hr>
+    <section>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam voluptates vitae, sed amet laudantium, blanditiis facere eveniet ipsa consequatur eligendi commodi harum molestiae. Consectetur voluptas ullam optio rem iure.</h2>
+        <p>Create by: <span>Alex</span></p>
+        <Button>Like</Button>
+    </section>
     <hr>
     <section class="test">
         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam voluptates vitae, sed amet laudantium, blanditiis facere eveniet ipsa consequatur eligendi commodi harum molestiae. Consectetur voluptas ullam optio rem iure.</h2>
