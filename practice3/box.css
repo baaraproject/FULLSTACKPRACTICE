@@ -1,0 +1,15 @@
+div {
+    width: 500px;
+    margin: 20px;
+}
+
+div {
+    border-style: dotted;
+    border-color: brown;
+    border-width: 5px 10px 15px 20px;
+}
+
+div {
+    padding: 10px 100px;
+    margin: 10px 50px;
+}

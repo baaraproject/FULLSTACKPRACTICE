@@ -1,0 +1,15 @@
+h1 {
+    background-color: chocolate;
+    border: 1px solid black;
+    width: 500px;
+    padding: 100px;
+    margin: 50px;
+}
+
+span {
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    width: 500px;
+    padding: 100px;
+    margin: 50px;
+}
