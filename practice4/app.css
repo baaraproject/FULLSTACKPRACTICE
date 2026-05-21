@@ -5,16 +5,49 @@ h1 {
 #container {
     background-color: #98d6f7;
     width: 90%;
-    height: 500px;
+    /* height: 500px; */
     margin: 0 auto;
     border: 5px solid #98d6f7;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    /* flex-wrap: wrap; */
+    align-content: center;
 }
 
 #container div {
     width: 200px;
     height: 200px;
+    /* flex-basis: 500px; */
+}
+
+/* div:nth-of-type(2) {
+    align-self: flex-end;
+} */
+
+/* div:nth-of-type(2) {
+    flex-grow: 1;
+} */
+
+div:nth-of-type(2) {
+    flex-shrink: 2;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid brown;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: #98d6f7;
+    flex: 1 2 300px;
+}
+
+main .content {
+    background-color: bisque;
+    flex: 2 1 800px;
 }
